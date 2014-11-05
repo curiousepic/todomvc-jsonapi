@@ -1,11 +1,16 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
+  title: Make todos
   order: 1
   completed: false
 
 two:
-  title: MyString
-  order: 1
+  title: Do a thing
+  order: 2
+  completed: true
+
+three:
+  title: Do a thing again
+  order: 3
   completed: false
