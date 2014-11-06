@@ -8,13 +8,13 @@ class Api::V1::TodosController < ApplicationController
   def create
     @todo = Todo.new(todo_params)
     @todo.save!
-    render json: @todo, status: :created, root: false
+    render json: [@todo], status: :created
   end
 
   def update
     @todo = Todo.find(params[:id])
     @todo.update!(todo_params)
-    render json: @todo, root: false
+    render json: [@todo]
   end
 
   def destroy
